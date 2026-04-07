@@ -1,7 +1,7 @@
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from trainer.trainer_copy import train
+from trainer.trainer import train
 import argparse
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

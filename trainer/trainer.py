@@ -4,8 +4,8 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from envs.mujoco_env import make_env
 import torch
-from algorithms.buffer import RolloutBuffer
-from algorithms.actor_critic import ActorCritic
+from utils.buffer import RolloutBuffer
+from models.actor_critic import ActorCritic
 from algorithms.PPO import PPO
 from algorithms.obs_norm import ObsNormalizer
 from torch.utils.tensorboard import SummaryWriter
